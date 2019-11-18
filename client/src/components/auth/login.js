@@ -23,7 +23,7 @@ class Login extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      window.location = "http://localhost:3000/";
+      window.location = "https://felicio-discover.herokuapp.com/";
     }if (nextProps.errors) {
       this.setState({
         errors: nextProps.errors
