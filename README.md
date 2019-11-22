@@ -13,7 +13,7 @@ If you want to run this website on your machine you will not be able to connect 
 
 ### Prerequisites
 
-Have NodeJs install.
+Have NodeJs installed.
 https://nodejs.org/
 
 ### Installing
