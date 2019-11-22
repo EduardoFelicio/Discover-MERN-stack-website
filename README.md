@@ -46,4 +46,4 @@ react, react-router-dom, nodejs, expressjs, mongoose, passportjs, jwt authentica
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the LICENSE.txt file for details
