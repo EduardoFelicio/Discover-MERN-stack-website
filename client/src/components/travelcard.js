@@ -20,7 +20,7 @@ function TravelCard(props){
   return(
     <div className="travel-section">
       <div style={backgroundStyle} className="travel-image">
-        <a href="/travels">
+        <a href="/experiences">
           <div style={coverStyle} className="cover-travel">
             <p className="travel-title">{props.title}</p>
           </div>

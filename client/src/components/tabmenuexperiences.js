@@ -13,7 +13,7 @@ class TabMenu extends Component {
        this.props.onSelectTag(tag);
     }
     handleLangChange1 = () => {
-       var tag="thailand";
+       var tag="hiking";
        this.props.onSelectTag(tag);
     }
     handleLangChange2 = () => {
@@ -21,23 +21,15 @@ class TabMenu extends Component {
        this.props.onSelectTag(tag);
     }
     handleLangChange3 = () => {
-       var tag="pirates";
+       var tag="snow";
        this.props.onSelectTag(tag);
     }
     handleLangChange4 = () => {
-       var tag="latada";
+       var tag="university";
        this.props.onSelectTag(tag);
     }
     handleLangChange5 = () => {
-       var tag="boys";
-       this.props.onSelectTag(tag);
-    }
-    handleLangChange6 = () => {
-       var tag="ahri";
-       this.props.onSelectTag(tag);
-    }
-    handleLangChange7 = () => {
-       var tag="locked";
+       var tag="tech";
        this.props.onSelectTag(tag);
     }
 
@@ -49,25 +41,19 @@ class TabMenu extends Component {
                       All
                     </Tab>
                     <Tab className="tab" onClick={this.handleLangChange1}>
-                      Thailand
+                      Hiking
                     </Tab>
                     <Tab className="tab" onClick={this.handleLangChange2}>
                       Paris
                     </Tab>
                     <Tab className="tab" onClick={this.handleLangChange3}>
-                      House of Pirates
+                      Snow
                     </Tab>
                     <Tab className="tab" onClick={this.handleLangChange4}>
-                      Latada
+                      University
                     </Tab>
                     <Tab className="tab" onClick={this.handleLangChange5}>
-                      Me and the Boys
-                    </Tab>
-                    <Tab className="tab" onClick={this.handleLangChange6}>
-                      Ahri
-                    </Tab>
-                    <Tab className="tab" onClick={this.handleLangChange7}>
-                      Locked
+                      Tech
                     </Tab>
                 </Tabs>
             </div>

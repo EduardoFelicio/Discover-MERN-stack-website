@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Footer(){
   return(
@@ -7,9 +8,9 @@ function Footer(){
         <div className="col">
           <h1>Experiences</h1>
           <ul>
-            <li>Abroad</li>
-            <li>University</li>
-            <li>People</li>
+            <Link to="/experiences"><li>Nature</li></Link>
+            <Link to="/experiences"><li>Places</li></Link>
+            <Link to="/experiences"><li>Tech</li></Link>
           </ul>
         </div>
         <div className="col">
@@ -23,8 +24,8 @@ function Footer(){
         <div className="col">
           <h1>About me</h1>
           <ul>
-            <li>Resume</li>
-            <li>Personal Info</li>
+            <Link to="/aboutme"><li>Resume</li></Link>
+            <Link to="/aboutme"><li>Personal Info</li></Link>
           </ul>
         </div>
         <div className="col">
@@ -32,13 +33,12 @@ function Footer(){
           <ul>
             <li>Foobar</li>
             <li>Foobar</li>
-            <li>Sitemap</li>
           </ul>
         </div>
         <div className="col">
           <h1>Support</h1>
           <ul>
-            <li>Contacts</li>
+            <Link to="/contacts"><li>Contacts</li></Link>
           </ul>
         </div>
         <div className="col social">

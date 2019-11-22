@@ -9,13 +9,14 @@ function Personal(props){
       <Container>
         <Row>
           <Col xl={6} lg={8} md={12} sm={12} xs={12} style={{textAlign:"center"}}>
-            <img style={{height:"500px"}} src="/images/me.jpg"></img>
+            <img alt="" style={{height:"500px"}} src="/images/me.jpg"></img>
           </Col>
           <Col xl={6} lg={4} md={12} sm={12} xs={12}>
             <h1 className="about-title">About me</h1>
             <p>My name is Eduardo Felício and I'm a 21 year old Computer Science student in the Faculty of Science and Technology of the University of Coimbra.
             I have worked professionaly over every summer since I was 17. Ranging from being a factory worker to an intern and finally over the last 2 years a software
-            engineering intern. I also plan on taking a Master's Degree in Software Engineering after my graduation.</p>
+            engineering intern. This is my first ReactJs and MERN project and I decided to do it because I feel like learning this stack could be a good asset in today's
+             job market. I also plan on taking a Master's Degree in Software Engineering after my graduation.</p>
           <Row>
             <Col sm={12} style={{textAlign:"center", paddingTop:"90px"}}>
               <h5>If you'd like to know more</h5>
@@ -26,7 +27,7 @@ function Personal(props){
         </Row>
       </Container>
       <div style={{textAlign:"center", marginTop:"60px"}}>
-        <img src="/images/icons/arrow-down.png" style={{height:"30px"}}></img>
+        <img alt="" src="/images/icons/arrow-down.png" style={{height:"30px"}}></img>
       </div>
     </div>
   )

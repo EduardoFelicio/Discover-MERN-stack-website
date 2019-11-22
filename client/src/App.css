@@ -1,7 +1,7 @@
 html, body { height: auto }
 
-a {
-  text-decoration: none;
+a,u {
+  text-decoration: none !important;
 }
 
 /* FONTS */
@@ -35,9 +35,14 @@ a {
 }
 .dense{
   font-family: 'denseregular';
+  font-size: 24px;
 }
 
 /* HEADER */
+
+.mdl-layout__drawer-button{
+  color:white!important;
+}
 
 .header-color{
   background: #000000;  /* fallback for old browsers */
@@ -50,6 +55,7 @@ a {
   font-family: 'denseregular';
   font-size: 20px !important;
   letter-spacing: 1px !important;
+  text-decoration: none !important;
   transition: all 0.5s;
 
 }
@@ -177,12 +183,12 @@ a {
   background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   height: 150px;
-  padding-bottom: 90px;
+
 }
 .divider
 {
 	position: relative;
-	margin-top: 50px;
+	margin-top: 40px;
 	height: 1px;
 }
 
@@ -225,7 +231,7 @@ a {
   font-variant: normal;
   text-transform: none;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 50px;
   justify-content: center;
 
 }
@@ -261,7 +267,7 @@ a {
   word-spacing: 0px;
   color: #ffffff;
   font-weight: 400;
-  text-decoration: rgb(68, 68, 68);
+  text-decoration: none !important;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
@@ -585,4 +591,8 @@ a {
 
 .red-text{
   color:red;
+}
+
+.contact-image{
+  height:30px;
 }

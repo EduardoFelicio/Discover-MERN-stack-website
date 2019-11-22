@@ -13,18 +13,18 @@ class TabMenu extends React.Component {
             <div className="tab-menu">
                 <Tabs className="tabs" activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })}>
                     <Tab className="tab">
-                      <NavLink smooth to="/landingpage#abroad-id" activeClassName="selected" style={{color: "#ffffff", fontFamily: "denseregular", fontSize: "20px"}}>
-                        Abroad
+                      <NavLink smooth to="/landingpage#nature-id" activeClassName="selected" style={{color: "#ffffff", fontFamily: "denseregular", fontSize: "20px"}}>
+                        Nature
                       </NavLink>
                     </Tab>
                     <Tab className="tab">
-                      <NavLink smooth to="/landingpage#university-id" activeClassName="selected" style={{color: "#ffffff", fontFamily: "denseregular", fontSize: "20px"}}>
-                        University
+                      <NavLink smooth to="/landingpage#places-id" activeClassName="selected" style={{color: "#ffffff", fontFamily: "denseregular", fontSize: "20px"}}>
+                        Places
                       </NavLink>
                     </Tab>
                     <Tab className="tab">
-                      <NavLink smooth to="/landingpage#people-id" activeClassName="selected" style={{color: "#ffffff", fontFamily: "denseregular", fontSize: "20px"}}>
-                        People
+                      <NavLink smooth to="/landingpage#tech-id" activeClassName="selected" style={{color: "#ffffff", fontFamily: "denseregular", fontSize: "20px"}}>
+                        Tech
                       </NavLink>
                     </Tab>
                 </Tabs>

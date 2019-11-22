@@ -3,7 +3,7 @@ import './App.css';
 import {Layout,Header,Navigation,Drawer,Content} from 'react-mdl';
 import Main from './components/main';
 import Footer from './components/footer';
-import {BrowserRouter as Router, Route, Switch,Link}  from 'react-router-dom';
+import {Link}  from 'react-router-dom';
 import { Provider } from "react-redux";
 import store from "./store";
 import jwt_decode from "jwt-decode";
@@ -63,7 +63,7 @@ render(){
               <Navigation>
                   <Link to="/" className="header-link">HOME</Link>
                   <Link to="/aboutme"className="header-link">ABOUT ME</Link>
-                  <Link to="/travels"className="header-link">EXPERIENCES</Link>
+                  <Link to="/experiences"className="header-link">EXPERIENCES</Link>
                   <Link to="/contacts"className="header-link">CONTACTS</Link>
                   <this.Greeting isLoggedIn={loggedIn} />
               </Navigation>
@@ -72,7 +72,7 @@ render(){
               <Navigation>
                 <Link to="/" className="header-link">HOME</Link>
                 <Link to="/aboutme"className="header-link">ABOUT ME</Link>
-                <Link to="/travels"className="header-link">EXPERIENCES</Link>
+                <Link to="/experiences"className="header-link">EXPERIENCES</Link>
                 <Link to="/contacts"className="header-link">CONTACTS</Link>
                 <this.Greeting isLoggedIn={loggedIn} />
               </Navigation>

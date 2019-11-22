@@ -3,31 +3,25 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import json from './images';
 
-var images = [],all=[],thailand=[],paris=[],pirates=[],boys=[],latada=[],ahri=[],locked=[];
+var images = [],all=[],hiking=[],paris=[],snow=[],university=[],tech=[];
 var atual ="random string";
 
 for(let i=0;i<json.length;i++){
   all.push(json[i].url);
-  if(json[i].tag === "thailand"){
-    thailand.push(json[i].url);
+  if(json[i].tag === "hiking"){
+    hiking.push(json[i].url);
   }
   if(json[i].tag === "paris"){
     paris.push(json[i].url);
   }
-  if(json[i].tag === "pirates"){
-    pirates.push(json[i].url);
+  if(json[i].tag === "snow"){
+    snow.push(json[i].url);
   }
-  if(json[i].tag === "latada"){
-    latada.push(json[i].url);
+  if(json[i].tag === "university"){
+    university.push(json[i].url);
   }
-  if(json[i].tag === "boys"){
-    boys.push(json[i].url);
-  }
-  if(json[i].tag === "ahri"){
-    ahri.push(json[i].url);
-  }
-  if(json[i].tag === "locked"){
-    locked.push(json[i].url);
+  if(json[i].tag === "tech"){
+    tech.push(json[i].url);
   }
 }
 
@@ -45,15 +39,13 @@ class Gallery extends Component {
   render() {
     const { photoIndex, isOpen } = this.state;
 
-  if(this.props.tag!=atual){
+  if(this.props.tag!==atual){
     if(this.props.tag==="all") images = all;
-    else if(this.props.tag==="thailand") images = thailand;
+    else if(this.props.tag==="hiking") images = hiking;
     else if(this.props.tag==="paris") images = paris;
-    else if(this.props.tag==="pirates") images = pirates;
-    else if(this.props.tag==="latada") images = latada;
-    else if(this.props.tag==="boys") images = boys;
-    else if(this.props.tag==="ahri") images = ahri;
-    else if(this.props.tag==="locked") images = locked;
+    else if(this.props.tag==="snow") images = snow;
+    else if(this.props.tag==="university") images = university;
+    else if(this.props.tag==="tech") images = tech;
     else if(this.props.tag===null) images = all;
     atual=this.props.tag;
     this.setState({photoIndex: 0});

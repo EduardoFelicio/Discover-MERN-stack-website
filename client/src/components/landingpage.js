@@ -14,60 +14,49 @@ class Landing extends Component{
       <TabMenu />
       <Reveal effect="fadeInUp">
         <div>
-          <InfoSection title="ABROAD" id="abroad-id" />
+          <InfoSection title="Nature" id="nature-id" />
         </div>
       </Reveal>
       <Reveal effect="fadeInUp">
         <div>
-          <TravelCard title="Thailand" imgUrl="/images/thaimain.jpg" coverColor="#808080" description="Bangkok, Suratthani, Koh Samui, Koh Phy Phy, Phuket" />
+          <TravelCard title="Hiking" imgUrl="/images/experiences/hiking/hikingmain.jpg" coverColor="#808080" description="" />
         </div>
       </Reveal>
       <SpaceSection />
       <Reveal effect="fadeInUp">
         <div>
-          <TravelCard title="Paris" imgUrl="/images/parismain.jpg" coverColor="#808080" description="Eiffel Tower, Arch du Triumph, Louvre" />
+          <TravelCard title="Snow" imgUrl="/images/experiences/snow/snowmain.jpg" coverColor="#808080" description="" />
         </div>
       </Reveal>
       <SpaceSection />
       <Reveal effect="fadeInUp">
         <div>
-          <InfoSection title="UNIVERISITY" id="university-id"  />
+          <InfoSection title="Places" id="places-id"  />
         </div>
       </Reveal>
       <Reveal effect="fadeInUp">
         <div>
-            <TravelCard title="House of Pirates" imgUrl="/images/piratemain.jpg" coverColor="#808080" description="Strip Quina?" />
+            <TravelCard title="Paris" imgUrl="/images/experiences/paris/parismain.jpg" coverColor="#808080" description="" />
         </div>
       </Reveal>
       <SpaceSection />
       <Reveal effect="fadeInUp">
         <div>
-          <TravelCard title="Latada" imgUrl="/images/latadamain.jpg" coverColor="#808080" description="Family, Friends and a lot of Alcohol" />
+          <TravelCard title="University" imgUrl="/images/experiences/university/universitymain.jpg" coverColor="#808080" description="" />
         </div>
       </Reveal>
       <SpaceSection />
       <Reveal effect="fadeInUp">
         <div>
-            <TravelCard title="Me and the Boys" imgUrl="/images/boysmain.jpg" coverColor="#808080" description="Memes, parties and class skipping" />
+          <InfoSection title="Tech" id="tech-id"  />
+        </div>
+      </Reveal>
+      <Reveal effect="fadeInUp">
+        <div>
+            <TravelCard title="Tech" imgUrl="/images/experiences/tech/techmain.jpg" coverColor="#808080" description="" />
         </div>
       </Reveal>
       <SpaceSection />
-      <Reveal effect="fadeInUp">
-        <div>
-            <InfoSection title="PEOPLE" id="people-id" />
-        </div>
-      </Reveal>
-      <Reveal effect="fadeInUp">
-        <div>
-          <TravelCard title="Ahri" imgUrl="/images/ahrimain.jpg" coverColor="#808080" description="Family, Friends and a lot of Alcohol" />
-        </div>
-      </Reveal>
-      <SpaceSection />
-      <Reveal effect="fadeInUp">
-        <div>
-          <TravelCard title="Locked" imgUrl="/images/locked.png" coverColor="#000000" description="Locked" />
-        </div>
-      </Reveal>
       </div>
     );
   }

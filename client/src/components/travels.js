@@ -5,7 +5,9 @@ import TabMenuExperiences from './tabmenuexperiences';
 import SpaceSection from './space';
 import Gallery from './gallery';
 import ExperienceTitle from './experiencetitle';
-import {Grid, Cell} from 'react-mdl';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Travels extends Component {
   constructor(props) {
@@ -22,16 +24,23 @@ class Travels extends Component {
         return (
           <div>
             <TabMenuExperiences onSelectTag={this.handleTag}/>
-            <Grid>
-              <Cell col={3}>
-              </Cell>
-              <Cell col={6}>
-                <ExperienceTitle title={this.state.tag} />
-              </Cell>
-              <Cell col={3}>
-                <Gallery tag={this.state.tag} />
-              </Cell>
-            </Grid>
+            <Container>
+              <Row>
+                <Col xl={3} lg={3} md={3} sm={0} xs={0}>
+                </Col>
+                <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+                  <Reveal effect="fadeInUp">
+                    <ExperienceTitle title={this.state.tag} />
+                  </Reveal>
+                </Col>
+                <Col xl={3} lg={3} md={3} sm={12} xs={12}>
+                  <Reveal effect="fadeInUp">
+                    <Gallery tag={this.state.tag} />
+                  </Reveal>
+                </Col>
+              </Row>
+            </Container>
+            <div style={{height:"40px"}}></div>
             <Reveal effect="fadeInUp">
               <ImageLoader tag={this.state.tag}/>
             </Reveal>
