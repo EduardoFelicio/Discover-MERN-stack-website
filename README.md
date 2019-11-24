@@ -7,7 +7,11 @@ A photo portfolio website using the MERN stack
 DISCOVER is a personal project I created in my 3rd year in my Computer Science Degree. I chose to do this project because I wanted to teach myself this particular stack since there is a high demand for it on the market and to better improve myself as a programmer.
 It's a website with a React Frontend and a NodeJs Backend, which uses ExpressJs to POST and GET from a MongoDB. The typical MERN stack.
 
-## Getting Started
+## Live Demo
+
+You can see a live demo for the project in https://felicio-discover.herokuapp.com/
+
+## Running it on your machine
 
 If you want to run this website on your machine you will not be able to connect to the MongoDB since the connection URI is stored somewhere else for security purposes. You can add your mongoURI in the /config/keys.js to connect to your DB.
 
